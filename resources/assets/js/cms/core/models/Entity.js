@@ -1,44 +1,46 @@
 import Model from './Model';
-import Validator from '../App/Validator';
+import Validator from '../../app/Validator/Validator';
 
-class TeamMember extends Model {
+class Entity extends Model {
 
     constructor(data = {}) {
         super(data);
 
         this.fields = {
-            first_name: {
+            name: {
                 type: 'text',
-                translation: 'Voornaam',
+                translation: 'Naam van de entiteit',
                 validation: new Validator({
                     required: true,
-                })
+                }),
+
             },
 
-            last_name: {
+            title: {
                 type: 'text',
-                translation: 'Achternaam',
+                translation: 'Title cms',
                 validation: new Validator({
-                    required: true,
-                })
+                    required: true
+                }),
             },
 
             description: {
                 type: 'textarea',
-                translation: 'Voornaam',
+                translation: 'Beschrijving voor de entiteit',
                 validation: new Validator({
                     required: true,
-                })
+                }),
             },
 
-            role: {
+            icon: {
                 type: 'text',
-                translation: 'Role',
+                translation: 'Kies een material design icon',
                 validation: new Validator({
-                    required: true,
-                })
+                    required: true
+                }),
             }
 
+           
         };
 
     }
@@ -46,4 +48,4 @@ class TeamMember extends Model {
 
 }
 
-export default TeamMember;
+export default Entity;

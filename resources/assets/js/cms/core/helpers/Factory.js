@@ -1,11 +1,11 @@
 window.Factory = new class{
 	
 	constructor() {
-		this.classNames = ['mentor', 'youth'];
+		this.classNames = [];
 	}
 
 	getInstanceOf(className, data = null) {   
-		     
+		
         className = Helper.lcfirst(className);
 		this.classNames.push(className);
         

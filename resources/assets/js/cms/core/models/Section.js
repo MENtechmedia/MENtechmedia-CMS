@@ -1,5 +1,5 @@
 import Model from './Model';
-import Validator from '../App/Validator';
+import Validator from '../../app/Validator/Validator';
 
 class Section extends Model {
 
@@ -7,21 +7,27 @@ class Section extends Model {
         super(data);
 
         this.fields = {
+            id: {
+                type: 'number',
+                translation: 'Identifier'
+            },
+
             title: {
                 type: 'text',
                 translation: 'Titel',
                 validation: new Validator({
                     required: true,
                 }),
-            }, 
-            
+            },
+
             body: {
                 type: 'textarea',
-                translation: 'Inhoud',
+                translation: 'De body van de sectie',
                 validation: new Validator({
                     required: true,
                 }),
             },
+
         };
 
     }
