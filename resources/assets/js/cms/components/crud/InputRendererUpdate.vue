@@ -34,14 +34,7 @@
                     :identifier="identifier"    
                     :value="innerValue"
                     v-if="
-                        attribute.type != 'textarea' && 
-                        attribute.type != 'select' && 
-                        attribute.type != 'website' &&
-                        attribute.type != 'photo' &&
-                        attribute.type != 'date' &&
-                        attribute.type != 'time' &&
-                        attribute.type != 'model' &&
-                        attribute.type != 'number'
+                        attribute.type == 'text' 
                     " 
                     :type="attribute.type" 
                     :attributeName="attributeName" 
@@ -72,6 +65,16 @@
                     :attribute="attribute"> 
                 </crud-number>
                 <!-- end of text input -->
+
+                <crud-youtube :identifier="identifier"    
+                    :value="innerValue"
+                    v-if="
+                        attribute.type === 'youtube'
+                    " 
+                    :type="attribute.type" 
+                    :attributeName="attributeName" 
+                    :attribute="attribute"> 
+                </crud-youtube>
 
                 <!-- display a text input if the type is text -->
                 <crud-select 
@@ -180,28 +183,35 @@
         }, 
         mounted() {
             this.innerValue = JSON.parse(this.value);
-            this.object = Factory.getInstanceOf(this.type.toLowerCase());
+            this.object = Factory.getInstanceOf(this.type);
             this.totalInputs = Object.keys(this.object.fields).length;
             setTimeout(() => {
                  Event.fire('input:insertValues:' + this.identifier);
             })
 
+            this.registerListeners();
         },
 
         methods: {
+            registerListeners() {
+                let attributeExceptions = [
+					'photo',
+                    'id',
+				];
+
+                _.each(this.object.fields, (attribute, attributeName) => {
+					if(_.indexOf(attributeExceptions, attribute.type) === -1) {
+						Event.listen('input:updated:' + attributeName, (value) => {
+							this.object[attributeName] = value;
+						});
+					}
+				});
+            },
+
             update() {
-                let object = Factory.getInstanceOf(this.type.toLowerCase());
+                this.object.id = this.innerValue.id;
 
-                _.each(this.innerValue, (value, attribute) => {
-                    if(this.object.fields[attribute] !== undefined) {
-                        object[attribute] = $('#' + attribute + this.identifier)[0].value;
-                    } else {
-                        object[attribute] = this.innerValue[attribute];
-                    }
-                });
-
-                delete object.fields
-                object.update().then((data) => {
+                this.object.update().then((data) => {
                     Event.fire(this.type.toLowerCase() + ':updated');
                     Notifier.success('Het is gelukt! Aangepast')
                     Event.fire(this.type.toLowerCase() + ':added', this.id);

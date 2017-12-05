@@ -13897,6 +13897,28 @@ h5 {
   background: white !important;
 }
 
+/* transparent bgs */
+
+.bg-dark-transparent-xs {
+  background: rgba(33, 29, 30, 0.1) !important;
+}
+
+.bg-dark-transparent-sm {
+  background: rgba(33, 29, 30, 0.3) !important;
+}
+
+.bg-dark-transparent-md {
+  background: rgba(33, 29, 30, 0.5) !important;
+}
+
+.bg-dark-transparent-lg {
+  background: rgba(33, 29, 30, 0.7) !important;
+}
+
+.bg-dark-transparent-xl {
+  background: rgba(33, 29, 30, 0.9) !important;
+}
+
 /*  opacity hovers */
 
 .hover-opacity-transparent:hover {
@@ -22118,5 +22140,33 @@ button.toast-close-button {
 .cropper-disabled .cropper-line,
 .cropper-disabled .cropper-point {
   cursor: not-allowed;
+}
+
+.cms-navigation {
+  position: fixed;
+}
+
+/* Large desktops and laptops */
+
+/* Landscape tablets and medium desktops */
+
+/* Portrait tablets and small desktops */
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
+  .cms-navigation {
+    position: relative;
+    height: 500px;
+  }
+}
+
+/* Portrait phones and smaller */
+
+@media (max-width: 480px) {
+  .cms-navigation {
+    position: relative;
+    height: 500px;
+  }
 }
 
