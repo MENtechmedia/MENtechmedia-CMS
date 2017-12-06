@@ -1,7 +1,17 @@
 class WalkThrough {
     constructor(steps) {
+        this.steps = [];
+
         this.steps = steps;
         this.currentStep = 0;
+    }
+
+    push(step) {
+        this.steps.push(step);
+    }
+
+    get(index) {
+        return this.steps[index];
     }
 
     current() {
