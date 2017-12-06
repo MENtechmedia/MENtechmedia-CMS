@@ -1,4 +1,11 @@
+/* Variables for distances */
+$dist-xs : 5px;
+$dist-sm : 15px;
+$dist-md : 30px;
+$dist-lg : 50px;
+$dist-xl : 70px;
 
+$dist-side : 85px;
 
 
 
@@ -7,9 +14,12 @@
 
 /* padding wrapper classes */
 
-	
-/* all screens */	
 
+/* all screens */
+
+.reset-padding{
+	padding: 0px;
+}
 
 .padding-xl{ padding: $dist-xl; }
 .padding-lg{ padding: $dist-lg; }
@@ -50,7 +60,7 @@
 .space-inside-down-xs{ padding-bottom: $dist-xs;}
 .space-inside-up-xs{ padding-top: $dist-xs;}
 .space-inside-left-xs{ padding-left: $dist-xs; }
-.space-inside-right-xs{ padding-right: $dist-xs; }	
+.space-inside-right-xs{ padding-right: $dist-xs; }
 
 
 
@@ -58,7 +68,7 @@
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-	
+
 
 	/* resets */
 
@@ -96,7 +106,7 @@
 	.lg-space-inside-up-xs-none{ padding-top: 0;  }
 	.lg-space-inside-left-xs-none{ padding-left: 0; }
 	.lg-space-inside-right-xs-none{ padding-right: 0;  }
-	
+
 	.lg-padding-xl{ padding: $dist-xl; }
 	.lg-padding-lg{ padding: $dist-lg; }
 	.lg-padding-md{ padding: $dist-md; }
@@ -136,7 +146,7 @@
 	.lg-space-inside-down-xs{ padding-bottom: $dist-xs;}
 	.lg-space-inside-up-xs{ padding-top: $dist-xs;}
 	.lg-space-inside-left-xs{ padding-left: $dist-xs; }
-	.lg-space-inside-right-xs{ padding-right: $dist-xs; }	
+	.lg-space-inside-right-xs{ padding-right: $dist-xs; }
 
 
 }
@@ -146,13 +156,6 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 
 	/* resets */
-	
-	.md-space-inside-top-none{ padding-top: 0px; }
-	.md-space-inside-left-none{ padding-left: 0px; }
-	.md-space-inside-down-none{ padding-bottom: 0px; }
-	.md-space-inside-right-none{ padding-right: 0px; }
-	.md-space-inside-sides-none{ padding-right: 0px; padding-left: 0px; }
-	.md-space-inside-none{ padding-top: 0px; padding-bottom: 0px; }
 
 	.md-space-inside-xl-none{ padding-top: 0; padding-bottom: 0; }
 	.md-space-inside-sides-xl-none{ padding-left: 0; padding-right: 0; }
@@ -228,27 +231,19 @@
 	.md-space-inside-down-xs{ padding-bottom: $dist-xs;}
 	.md-space-inside-up-xs{ padding-top: $dist-xs;}
 	.md-space-inside-left-xs{ padding-left: $dist-xs; }
-	.md-space-inside-right-xs{ padding-right: $dist-xs; }	
+	.md-space-inside-right-xs{ padding-right: $dist-xs; }
 
 
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-	
+
 	.xs-reset-padding{
 		padding: 0px;
 	}
 
 	/* resets */
-	
-
-	.sm-space-inside-top-none{ padding-top: 0px; }
-	.sm-space-inside-left-none{ padding-left: 0px; }
-	.sm-space-inside-down-none{ padding-bottom: 0px; }
-	.sm-space-inside-right-none{ padding-right: 0px; }
-	.sm-space-inside-sides-none{ padding-right: 0px; padding-left: 0px; }
-	.sm-space-inside-none{ padding-top: 0px; padding-bottom: 0px; }
 
 	.xs-space-inside-xl-none{ padding-top: 0; padding-bottom: 0; }
 	.xs-space-inside-sides-xl-none{ padding-left: 0; padding-right: 0; }
@@ -335,7 +330,7 @@
 @media (max-width: 767px) {
 
 	/* resets */
-	
+
 	.xs-space-inside-xl-none{ padding-top: 0; padding-bottom: 0; }
 	.xs-space-inside-sides-xl-none{ padding-left: 0; padding-right: 0; }
 	.xs-space-inside-down-xl-none{  padding-bottom: 0; }
@@ -410,7 +405,7 @@
 	.xs-space-inside-down-xs{ padding-bottom: $dist-xs;}
 	.xs-space-inside-up-xs{ padding-top: $dist-xs;}
 	.xs-space-inside-left-xs{ padding-left: $dist-xs; }
-	.xs-space-inside-right-xs{ padding-right: $dist-xs; }	
+	.xs-space-inside-right-xs{ padding-right: $dist-xs; }
 
 }
 
@@ -419,7 +414,7 @@
 
 
 	/* resets */
-	
+
 	.-space-inside-xl-none{ padding-top: 0; padding-bottom: 0; }
 	.-space-inside-sides-xl-none{ padding-left: 0; padding-right: 0; }
 	.-space-inside-down-xl-none{  padding-bottom: 0; }
@@ -453,7 +448,7 @@
 	.-space-inside-down-xs-none{  padding-bottom: 0; }
 	.-space-inside-up-xs-none{ padding-top: 0;  }
 	.-space-inside-left-xs-none{ padding-left: 0; }
-	.-space-inside-right-xs-none{ padding-right: 0;  }	
+	.-space-inside-right-xs-none{ padding-right: 0;  }
 
 
 	.-padding-xl{ padding: $dist-xl; }
@@ -495,9 +490,9 @@
 	.-space-inside-down-xs{ padding-bottom: $dist-xs;}
 	.-space-inside-up-xs{ padding-top: $dist-xs;}
 	.-space-inside-left-xs{ padding-left: $dist-xs; }
-	.-space-inside-right-xs{ padding-right: $dist-xs; }	
+	.-space-inside-right-xs{ padding-right: $dist-xs; }
 
-	
+
 }
 
 
@@ -546,13 +541,13 @@
 	.space-outside-down-xs{ margin-bottom: $dist-xs;}
 	.space-outside-up-xs{ margin-top: $dist-xs;}
 	.space-outside-left-xs{ margin-left: $dist-xs; }
-	.space-outside-right-xs{ margin-right: $dist-xs; }	
+	.space-outside-right-xs{ margin-right: $dist-xs; }
 
 
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-	
+
 	/* resets */
 
 	.lg-space-outside-xl-none{ margin-top: 0; margin-bottom: 0; }
@@ -630,7 +625,7 @@
 	.lg-space-outside-down-xs{ margin-bottom: $dist-xs;}
 	.lg-space-outside-up-xs{ margin-top: $dist-xs;}
 	.lg-space-outside-left-xs{ margin-left: $dist-xs; }
-	.lg-space-outside-right-xs{ margin-right: $dist-xs; }	
+	.lg-space-outside-right-xs{ margin-right: $dist-xs; }
 
 
 }
@@ -714,7 +709,7 @@
 	.md-space-outside-down-xs{ margin-bottom: $dist-xs;}
 	.md-space-outside-up-xs{ margin-top: $dist-xs;}
 	.md-space-outside-left-xs{ margin-left: $dist-xs; }
-	.md-space-outside-right-xs{ margin-right: $dist-xs; }	
+	.md-space-outside-right-xs{ margin-right: $dist-xs; }
 
 
 }
@@ -798,7 +793,7 @@
 	.sm-space-outside-down-xs{ margin-bottom: $dist-xs;}
 	.sm-space-outside-up-xs{ margin-top: $dist-xs;}
 	.sm-space-outside-left-xs{ margin-left: $dist-xs; }
-	.sm-space-outside-right-xs{ margin-right: $dist-xs; }	
+	.sm-space-outside-right-xs{ margin-right: $dist-xs; }
 
 }
 
@@ -881,7 +876,7 @@
 	.xs-space-outside-down-xs{ margin-bottom: $dist-xs;}
 	.xs-space-outside-up-xs{ margin-top: $dist-xs;}
 	.xs-space-outside-left-xs{ margin-left: $dist-xs; }
-	.xs-space-outside-right-xs{ margin-right: $dist-xs; }	
+	.xs-space-outside-right-xs{ margin-right: $dist-xs; }
 
 }
 
@@ -964,7 +959,7 @@
 	.xs-space-outside-down-xs{ margin-bottom: $dist-xs;}
 	.xs-space-outside-up-xs{ margin-top: $dist-xs;}
 	.xs-space-outside-left-xs{ margin-left: $dist-xs; }
-	.xs-space-outside-right-xs{ margin-right: $dist-xs; }	
+	.xs-space-outside-right-xs{ margin-right: $dist-xs; }
 }
 
 
@@ -997,7 +992,7 @@
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-	
+
 
 	.lg-row-centered {
 	    text-align: center;
@@ -1090,13 +1085,13 @@
 
 }
 
-	
+
 
 
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-	
+
 	.lg-text-center{
 		text-align: center;
 	}
@@ -1198,44 +1193,6 @@ a{
 	overflow: hidden;
 }
 
-.no-overflow-x {
-	overflow-x: hidden;
-}
-
-.overflow-x-auto {
-	overflow-x: auto;
-}
-
-
-.overflow-y-auto {
-	overflow-y: auto;
-}
-
-.overflow-auto {
-	overflow: auto;
-}
-
-.vertical-scrollbar {
-	overflow-y: scroll;
-
-}
-
-::-webkit-scrollbar
-{
-  width: 12px;  /* for vertical scrollbars */
-  height: 12px; /* for horizontal scrollbars */
-}
-
-::-webkit-scrollbar-track
-{
-  background: rgba(0, 0, 0, 0.1);
-}
-
-::-webkit-scrollbar-thumb
-{
-  @extend .bg-main-darken-xs;
-}
-T
 
 .relative{
 	position: relative;
@@ -1248,6 +1205,80 @@ T
 
 
 
+.width-auto{
+	height: 100%;
+	width: auto;
+}
+
+.height-auto{
+	width: 100%;
+	height: auto;
+}
+
+	/* Large desktops and laptops */
+	@media (min-width: 1200px) {
+			.lg-width-auto{
+				height: 100%;
+				width: auto;
+			}
+
+		.lg-height-auto{
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	/* Landscape tablets and medium desktops */
+	@media (min-width: 992px) and (max-width: 1199px) {
+			.md-width-auto{
+				height: 100%;
+				width: auto;
+			}
+
+		.md-height-auto{
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	/* Portrait tablets and small desktops */
+	@media (min-width: 768px) and (max-width: 991px) {
+			.sm-width-auto{
+				height: 100%;
+				width: auto;
+			}
+
+		.sm-height-auto{
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	/* Landscape phones and portrait tablets */
+	@media (max-width: 767px) {
+			.xs-width-auto{
+				height: 100%;
+				width: auto;
+			}
+
+		.xs-height-auto{
+			width: 100%;
+			height: auto;
+		}
+	 }
+
+	/* Portrait phones and smaller */
+	@media (max-width: 480px) {
+			.xs-width-auto{
+				height: 100%;
+				width: auto;
+			}
+
+		.xs-height-auto{
+			width: 100%;
+			height: auto;
+		}
+	 }
 
 
 
@@ -1298,7 +1329,7 @@ T
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-	
+
 
 
 
@@ -1329,20 +1360,4 @@ T
 @media (max-width: 480px) {
 
 
-}
-
-
-
-
-.reset-padding{ padding: 0px !important; }
-.reset-padding-left { padding-left: 0px !important; }
-.reset-padding-right { padding-right: 0px !important; }
-.reset-padding-up { padding-top: 0px !important; }
-.reset-padding-down { padding-bottom: 0px !important; }
-
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
 }
