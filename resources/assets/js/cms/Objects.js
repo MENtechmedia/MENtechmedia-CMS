@@ -10,7 +10,7 @@
         |
         */
         
-
+        import Ticket from './models/ticket';
         
     
         /*
@@ -25,7 +25,7 @@
         */
     
         window.models = {
-           
+            ticket: Ticket,
         };
             
         

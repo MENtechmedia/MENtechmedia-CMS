@@ -35,3 +35,4 @@ Route::resource('user', 'api\UserController');
   */
  Route::resource('article', 'api\ArticleController');
  Route::resource('settings', 'api\SettingsController');
+ Route::resource('ticket', 'api\TicketController');
