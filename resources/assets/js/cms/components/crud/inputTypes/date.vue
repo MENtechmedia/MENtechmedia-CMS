@@ -1,25 +1,7 @@
 <template>
 	<div v-if="dateInputController !== null" @keyup.9.capture.prevent.stop>
 		
-		<div class="col-lg-12 reset-padding " style="height: 100%;">
-
-			<!-- The attribute field's title -->
-			<p 
-				style=" text-transform: capitalize" 
-				class="
-					font-sm text-bold text-color-dark 
-					inline-block
-					space-inside-up-xs space-inside-down-sm space-inside-right-sm 
-					"
-			>{{ attribute.translation }}</p>
-
-
-			<!-- The WalkThrough for this input -->
-			<div v-if="attribute.walkThrough !== undefined" class="inline-block">
-				<tooltip :walkThrough="attribute.walkThrough"></tooltip>
-			</div>
-
-		</div>
+		<attribute-title :attribute="attribute"></attribute-title>
 
 		<p min="1" max="31" class="inline-block reset-padding space-inside-sides-md bg-tertiary text-color-light space-inside-sm">dag</p>
 		<input v-model="dateInputController.day" @keyup="dateInputController.trackInput()" :id="'dag' + attributeName + identifier" class="
@@ -79,7 +61,7 @@
 		},
 
 		mounted() {
-			this.dateInputController = new DateInputController(this.attributeName, this.attribute, this.identifier, this.value);
+			this.dateInputController = new DateInputController(this.attributeName, this.attribute, this.value);
 		},
 
 	}
