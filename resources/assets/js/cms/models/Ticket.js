@@ -9,34 +9,69 @@ class Ticket extends Model {
 
         this.fields = {
             title: {
-                type : 'text',
-                translation: 'Locatie',
+                type: 'text',
+                translation: 'Locatienaam ',
                 validation: new Validator({
-                    required: true
+                    required: true,
                 }),
+                walkThrough: this.titleWalkThrough(),
             },
 
             date: {
                 type: 'date',
-                translation: 'Datum uitvoering',
-                description: 'Datum',
+                translation: 'Datum',
                 validation: new Validator({
-                    required: true
+                    required: true,
                 }),
+                walkThrough: this.dateWalkThrough()
             },
 
             link: {
                 type: 'website',
                 translation: 'Link naar ticketverkoop',
-                description: 'Link',
                 validation: new Validator({
-                    required: true
+                    required: true,
                 }),
-            }
+                walkThrough: this.linkWalkThrough(),
+            },
 
+            description: {
+                type: 'textarea',
+                translation:  'Korte beschrijving van de uitvoering.',
+                validation: new Validator({
+                    required: true,
+                }),
+                walkThrough: this.descriptionWalkThrough(),
+            }
 
         };
 
+    }
+
+    dateWalkThrough() {
+        return new WalkThrough([
+            'De datum waarop de uitvoering plaatsvindt.',
+        ]);
+    }
+
+    linkWalkThrough() {
+        return new WalkThrough([
+            'Plaats hier de link naar de website van de ticketverkoper. Een link die direct naar het ticket leidt is gewenst.',
+        ]);
+    }
+
+    titleWalkThrough() {
+        return new WalkThrough([
+            'De locatienaam is de naam van het gebouw waar de uitvoering plaatsvindt.',
+        ]);
+    }
+
+    descriptionWalkThrough() {
+        return new WalkThrough([
+            'Een beschrijving bij de tickets geeft de gebruiker een betere ervaring op je website. ',
+            'Zorg ervoor dat de beschrijving beknopt blijft. Het is van belang dat de informatie ' + 
+            'in deze beschrijving nuttig is voor de lezer. Google zal de website beter indexeren, wanneer de content beknopt en nuttig is. '
+        ]);
     }
 
 
