@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('cms.Core.setup.index');
-});
+
 
 
 
@@ -30,10 +28,15 @@ Route::group(['prefix' => 'cms'],  function () {
 
     Route::group(['middleware' => ['auth']], function(){
 
+        // Route::get('/', function () {
+        //     return view('cms.Core.setup.index');
+        // });
+
         // --- CORE ROUTES ONLY
+        Route::get('/', 'cms\DashBoardController@index');
         Route::get('/profile/edit', 'cms\ProfileController@edit');
         Route::get('/logout', 'cms\LogoutController@logout');
-   		Route::get('/', 'cms\DashBoardController@index');
+   		// Route::get('/', 'cms\DashBoardController@index');
         Route::get('/edit', 'cms\FrontController@edit');
         
         // --- CORE POSt ROUTES ONLY
@@ -50,4 +53,4 @@ Route::group(['prefix' => 'cms'],  function () {
 });
 
 Auth::routes();
-Route::get('home', 'cms\HomeController@index');
+Route::get('/', 'HomepageController@index');

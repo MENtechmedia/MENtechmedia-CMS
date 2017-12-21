@@ -2,7 +2,7 @@
   <a href="/">
 
     <div style="position: relative; top: 7px;" class="col-lg-1 col-md-1 col-sm-2  main-logo hidden-xs space-inside-up-xs ">
-      <img src='../images/logo-1.jpg' />
+      <img src='../images/logo-1.jpg' style="height: 30px;" />
     </div>
 
     <div style="position: relative; top: 9px;" class="col-lg-3 col-md-2 col-sm-1  main-logo visible-lg space-inside-up-xs ">

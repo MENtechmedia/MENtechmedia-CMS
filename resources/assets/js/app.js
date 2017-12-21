@@ -62,6 +62,10 @@
         new WOW().init();
     });
 
+    // image slider
+    Vue.component('image-slider', require('./components/image-sliders/owl-image-slider.vue'));
+    Vue.component('slide', require('./components/image-sliders/slide-types/basic-slide.vue'));
+
 
     /*
     |--------------------------------------------------------------------------

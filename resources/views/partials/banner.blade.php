@@ -10,25 +10,34 @@
             no-overflow
             lg-space-inside-up-xl md-space-inside-up-xl
         ">
-          <h1
-            class="
-              text-color-light
-              lg-space-outside-up-xl md-space-outside-up-xs xs-space-outside-up-xs space-inside-up-xl
-              hidden-xs
-              wow fadeInLeft animated
-          " data-wow-duration="2s">
+          <editable-title id="1">
+            <h1
+              class="
+                text-color-light
+                lg-space-outside-up-xl md-space-outside-up-xs xs-space-outside-up-xs space-inside-up-xl
+                hidden-xs
+                wow fadeInLeft animated
+            " data-wow-duration="2s">
 
 
-            <span> PRJCT </span> Amsterdam
-          </h1>
+              <span> <editable-text></editable-text> </span> <editable-text></editable-text>
+            </h1>
+          </editable-title>
 
-          <p class="
-            text-color-light font-lg
-            space-outside-up-md space-inside-down-md xs-space-outside-xs
-            block
-            xs-font-md
-            wow fadeIn animated
-          "><span style="font-size: 50px; position: relative; top: 15px;" class="text-color-secondary ">“</span>We believe in music, love, and new generations<span style="font-size: 50px; position: relative; top: 15px;" class="text-color-secondary">”</span></p>
+          <editable-section id="1">
+            <p class="
+              text-color-light font-lg
+              space-outside-up-md space-inside-down-md xs-space-outside-xs
+              block
+              xs-font-md
+              wow fadeIn animated
+            "><span style="font-size: 50px; position: relative; top: 15px;" class="text-color-secondary ">“</span>
+              
+                <editable-text></editable-text><editable-text></editable-text>
+              
+              <span style="font-size: 50px; position: relative; top: 15px;" class="text-color-secondary">”
+            </span></p>
+          </editable-section>
           <a href="#over" class="
               inline-block
               border border-light

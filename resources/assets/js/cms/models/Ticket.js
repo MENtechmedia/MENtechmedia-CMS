@@ -42,7 +42,16 @@ class Ticket extends Model {
                     required: true,
                 }),
                 walkThrough: this.descriptionWalkThrough(),
-            }
+            },
+
+            photo: { 
+				type: 'photo', 
+				translation: 'Kies een foto', 
+				dimensions: {"16x9": 'landscape', "1x1": 'portrait'},
+				validation: new Validator({
+					required: true,
+				}),
+			},
 
         };
 

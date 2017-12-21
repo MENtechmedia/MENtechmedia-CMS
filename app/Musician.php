@@ -4,19 +4,17 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Ticket extends Model
+class Musician extends Model
 {
     use HasPhotos;
 
     protected $appends = [
         'portrait',
-        'landscape'
     ];
 
     protected $fillable = [
-        'title',
-        'date',
-        'link',
+        'name',
+        'function',
         'description',
     ];
 }
