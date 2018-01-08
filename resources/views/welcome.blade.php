@@ -56,7 +56,7 @@
                     <div class="hidden-xs">
                         @forelse($tickets as $ticket)
                             @include('partials.homepage.ticket', [
-                                'date' => $ticket->date,
+                                'date' => $ticket->getDate() . " " . getMonthName($ticket->getMonth()) . " " . $ticket->getYear(),
                                 'image' => $ticket->landscape,
                                 'title' => $ticket->title,
                                 'websiteAddress' => "https://" . $ticket->link,

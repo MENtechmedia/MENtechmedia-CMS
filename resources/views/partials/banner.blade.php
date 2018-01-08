@@ -20,7 +20,7 @@
             " data-wow-duration="2s">
 
 
-              <span> <editable-text></editable-text> </span> <editable-text></editable-text>
+              PRJCT Amsterdam
             </h1>
           </editable-title>
 
@@ -33,7 +33,7 @@
               wow fadeIn animated
             "><span style="font-size: 50px; position: relative; top: 15px;" class="text-color-secondary ">“</span>
               
-                <editable-text></editable-text><editable-text></editable-text>
+                We believe in music, love, and new generations
               
               <span style="font-size: 50px; position: relative; top: 15px;" class="text-color-secondary">”
             </span></p>

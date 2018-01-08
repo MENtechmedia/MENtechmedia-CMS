@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Ticket extends Model
 {
     use HasPhotos;
+    use ExplodableDate;
 
     protected $appends = [
         'portrait',
