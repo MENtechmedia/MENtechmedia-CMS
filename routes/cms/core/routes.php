@@ -2,7 +2,7 @@
 
 // --- CORE ROUTES ONLY
 Route::get('/profile/edit', $cms_namespace . 'ProfileController@edit');
-Route::get('/logout', $auth_namespace . 'LogoutController@logout');
+Route::get('/logout', $cms_namespace . 'LogoutController@logout');
 Route::get('/', $cms_namespace . 'DashBoardController@index');
 Route::get('/edit', $cms_namespace . 'FrontController@edit');
 
