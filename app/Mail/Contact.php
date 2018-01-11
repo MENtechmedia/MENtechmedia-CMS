@@ -18,7 +18,7 @@ class Contact extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
         $this->form_data = $data;
     }
@@ -32,6 +32,6 @@ class Contact extends Mailable
     {
         return $this->from($this->form_data['email'])
                     ->subject('Contactbericht contactformulier')
-                    ->markdown('mails.contact.contact')
+                    ->markdown('mails.contact.contact');
     }
 }

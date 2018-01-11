@@ -44,6 +44,13 @@
                 @include('partials.banner')
             </div>
 
+            @if (Session::has('message'))
+            <div style="z-index: 100; position: fixed; right: 50px; top:50px; width:300px; height:50px;" class="text-center bg-main space-inside-sm  shadow-sm wow fadeOutUpBig animated" data-wow-delay="5s">
+                <i class="material-icons space-inside-sides-sm inline-block text-color-light" >email</i>
+                <h3 style="position: relative; bottom: 5px;" class="text-color-light text-thin inline-block">{{ Session::get('message') }}</h3>
+            </div>
+            @endif
+
             <div id='over' class="container-fluid space-inside-sides-xl xs-space-inside-sides-md  space-inside-lg bg-accent">
 
                 <div class="row">
@@ -162,6 +169,7 @@
             <div id="contact" class="container-fluid space-inside-sides-xl space-inside-lg">
                 <div class="row">
                     <form method='POST' action='/mail'>
+                        {{ csrf_field() }}
                         <div class="col-lg-12 space-inside-down-lg">
                             <h1 class="text-color-main text-bold">Contact</h1>
                         </div>
