@@ -12,6 +12,7 @@
         
         import Ticket from './models/ticket';
         import Musician from './models/musician';
+        import Project from './models/project';
         
     
         /*
@@ -28,6 +29,7 @@
         window.models = {
             ticket: Ticket,
             musician: Musician,
+            project: Project,
         };
             
         

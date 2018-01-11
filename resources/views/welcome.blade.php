@@ -7,13 +7,29 @@
 
         <title>PRJCT Amsterdam || Music ensemble by Maarten Engeltjes</title>
         <link rel="stylesheet" type="text/css" href="/css/app.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,600" rel="stylesheet" type="text/css">
+        <?php 
+            $id = null; 
+            
+            if(Auth::check()){ 
+                $id = json_encode(Auth::user()->id); 
+            } 
+        ?>
+
+        <script>
+            window.Laravel = <?php echo json_encode([
+                'csrfToken' => csrf_token(),
+                
+            ]); ?>
+
+            window.user_id =  <?php echo json_encode($id); ?>   
+        </script>
     </head>
     <body>
-        <script>
-            window.Laravel = { csrfToken: '{{ csrf_token() }}' };
-        </script>
+          
         <div id="app">
             <div id='top' style="position: relative; z-index: 20"
                 class="
@@ -201,6 +217,7 @@
                 @include('partials.top-scroll')
             </div>
         </div>
+    </div>
        @include('partials.footer')
 
         <script type="text/javascript" src="/js/app.js"></script>

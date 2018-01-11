@@ -10,7 +10,7 @@
             no-overflow
             lg-space-inside-up-xl md-space-inside-up-xl
         ">
-          <editable-title id="1">
+
             <h1
               class="
                 text-color-light
@@ -22,9 +22,9 @@
 
               PRJCT Amsterdam
             </h1>
-          </editable-title>
 
-          <editable-section id="1">
+
+
             <p class="
               text-color-light font-lg
               space-outside-up-md space-inside-down-md xs-space-outside-xs
@@ -37,7 +37,7 @@
               
               <span style="font-size: 50px; position: relative; top: 15px;" class="text-color-secondary">”
             </span></p>
-          </editable-section>
+
           <a href="#over" class="
               inline-block
               border border-light

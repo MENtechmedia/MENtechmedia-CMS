@@ -7,13 +7,6 @@ class Entity extends Model {
         super(data);
 
         this.fields = {
-            id: {
-                type: 'number',
-                translation: 'Identifier',
-                description: 'Unieke ID',
-                sortBy: 'numerical',
-            },
-
             name: {
                 type: 'text',
                 translation: 'Naam van de entiteit',

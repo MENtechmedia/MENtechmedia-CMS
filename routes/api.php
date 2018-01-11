@@ -36,3 +36,5 @@ foreach (File::glob(base_path('routes/api/core/*.php')) as $filename) {
  Route::resource('settings', 'api\SettingsController');
  Route::resource('ticket', 'api\TicketController');
  Route::resource('musician', 'api\MusicianController');
+
+ Route::resource('project', 'api\ProjectController');
