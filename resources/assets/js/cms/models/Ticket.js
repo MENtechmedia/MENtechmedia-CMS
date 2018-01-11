@@ -50,7 +50,8 @@ class Ticket extends Model {
 				dimensions: {"16x9": 'landscape', "1x1": 'portrait'},
 				validation: new Validator({
 					required: true,
-				}),
+                }),
+                hidden: true,
 			},
 
         };

@@ -41,7 +41,8 @@ class Musician extends Model {
 				dimensions: {"1x1": 'portrait'},
 				validation: new Validator({
 					required: true,
-				}),
+                }),
+                hidden: true,
 			},
 
         };
