@@ -176,8 +176,18 @@
                             " required>
                         </div>
                         <div class="col-lg-4 clear-floats space-inside-xs">
+                            <p class="space-inside-sm text-bold">Emailadres</p>
+                            <input type="email" name="email"
+                            class="
+                                border border-accent border-curved
+                                height-auto
+                                bg-accent
+                                space-inside-left-sm
+                            " required>
+                        </div>
+                        <div class="col-lg-4 clear-floats space-inside-xs">
                             <p class="space-inside-sm text-bold">Telefoonnummer</p>
-                            <input type="text" name="name"
+                            <input type="text" name="phone_number"
                             class="
                                 border border-accent border-curved
                                 height-auto
@@ -189,7 +199,7 @@
                         </div>
                         <div class="col-lg-7 clear-floats space-inside-xs">
                             <p class="space-inside-sm text-bold">Uw bericht</p>
-                            <textarea style="resize: none; min-height: 200px;" type="text" name="name"
+                            <textarea style="resize: none; min-height: 200px;" type="text" name="message"
                             class="
                                 border border-accent border-curved
                                 height-auto

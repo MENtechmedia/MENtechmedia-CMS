@@ -61,3 +61,6 @@ Route::post('password/reset', $auth_namespace . 'ResetPasswordController@reset')
 
 Route::get('home', $cms_namespace . 'HomeController@index');
 
+// Mail routes
+Route::post('mail', $web_namespace . 'ContactController@contact');
+
