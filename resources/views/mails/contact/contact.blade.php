@@ -1,6 +1,6 @@
 @component('mail::message')
 Beste lezer,
-<br/><
+<br/>
 Er is contact opgenomen voor PRJCT Amsterdam middels het contactformulier.
 <br/><br/>
 De volgende gegevens zijn achtergelaten:
