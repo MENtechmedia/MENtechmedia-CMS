@@ -35,7 +35,7 @@
 		 		</div>
 	 		</a>
 
- 			<p class='text-color-light text-bold'> &copy; Maarten Engeltjes 2017</p>
+ 			<p class='text-color-light text-bold'> &copy; Maarten Engeltjes <?php echo date("Y") ?></p>
 
  		</div>
 
