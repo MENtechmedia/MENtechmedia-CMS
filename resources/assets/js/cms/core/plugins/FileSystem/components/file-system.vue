@@ -17,7 +17,6 @@
                     <i class="material-icons text-color-accent">file_download</i>
                 </div>
 
-
             </div>
         </div>
 
@@ -46,7 +45,6 @@
         position: absolute;
         bottom: 0px;
         left: 0px;
-        
     }
 
     .operationButton {
@@ -65,6 +63,7 @@
 </style>
 
 <script>
+   
     export default {
         props: {
 
@@ -73,10 +72,19 @@
         data() {
             return {
                 active: false,
+                root: null,
             }
         }, 
 
         mounted() {
+            
+            Factory.getStaticInstance('folder').find([
+                ['name', '=', 'root']
+            ]).then((rootFolder) => {
+                this.root = rootFolder;
+                console.log(this.root);
+            });
+
             $(document).ready(function() {
                 $(window).resize(function(){
                     // If there are multiple elements with the same class, "main"

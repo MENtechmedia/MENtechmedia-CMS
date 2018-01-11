@@ -23,7 +23,7 @@ class UsersTableSeeder extends Seeder
         $user->password = bcrypt("password");
 
         $user->save();
+        Bouncer::assign('admin')->to($user);
 
-        Bouncer::assign('admin')->to(User::find(1));
     }
 }

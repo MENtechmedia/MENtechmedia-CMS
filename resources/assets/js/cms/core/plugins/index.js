@@ -10,6 +10,7 @@
     */  
     
     import FileSystem from './FileSystem/FileSystem';
+    import NewsLetter from './NewsLetter/NewsLetter';
 
 
     /*
@@ -25,6 +26,7 @@
 
     window.Plugins = {
         fileSystem: FileSystem,
+        newsLetter: NewsLetter,
     };
 
  
@@ -44,4 +46,5 @@
         let plugin = new window.Plugins[index];
 
         require("./" + plugin.constructor.name + '/' + plugin.entry);
+        require("./" + plugin.constructor.name + '/models/index');
     }

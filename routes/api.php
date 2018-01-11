@@ -2,6 +2,9 @@
 
 use Illuminate\Http\Request;
 
+$api_namespace = "app\\Http\\Controllers\\api";
+$plugin_namespace = "app\\Plugins\\";
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -22,6 +25,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
  * Core routes here
  */
 
+
+
 foreach (File::glob(base_path('routes/api/core/*.php')) as $filename) {
     if (isset($filename) && file_exists($filename)) {
         require $filename;
@@ -36,5 +41,4 @@ foreach (File::glob(base_path('routes/api/core/*.php')) as $filename) {
  Route::resource('settings', 'api\SettingsController');
  Route::resource('ticket', 'api\TicketController');
  Route::resource('musician', 'api\MusicianController');
-
  Route::resource('project', 'api\ProjectController');

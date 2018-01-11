@@ -1,8 +1,8 @@
-import Model from './Model';
-import Validator from '../../app/Validator/Validator';
-import WalkThrough from '../../app/WalkThrough/WalkThrough';
+import Model from '../../../models/Model';
+import Validator from '../../../../app/Validator/Validator';
+import WalkThrough from '../../../../app/WalkThrough/WalkThrough';
 
-class User extends Model {
+class Mail extends Model {
 
     constructor(data = {}) {
         super(data);
@@ -31,7 +31,6 @@ class User extends Model {
                 validation: new Validator({
                     required: true
                 }),
-                hidden: true,
             },
         };
 
@@ -40,4 +39,4 @@ class User extends Model {
 
 }
 
-export default User;
+export default Mail;
