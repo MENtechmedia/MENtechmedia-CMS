@@ -2,8 +2,8 @@
 
 use Illuminate\Http\Request;
 
-$api_namespace = "app\\Http\\Controllers\\api";
-$plugin_namespace = "app\\Plugins\\";
+$api_namespace = "App\\Http\\Controllers\\api\\";
+$plugin_namespace = "App\\Plugins\\";
 
 /*
 |--------------------------------------------------------------------------
@@ -37,8 +37,8 @@ foreach (File::glob(base_path('routes/api/core/*.php')) as $filename) {
  /**
   * Custom routes here
   */
- Route::resource('article', 'api\ArticleController');
- Route::resource('settings', 'api\SettingsController');
- Route::resource('ticket', 'api\TicketController');
- Route::resource('musician', 'api\MusicianController');
- Route::resource('project', 'api\ProjectController');
+ Route::resource('article', $api_namespace . 'ArticleController');
+ Route::resource('settings',  $api_namespace . 'SettingsController');
+ Route::resource('ticket',  $api_namespace . 'TicketController');
+ Route::resource('musician',  $api_namespace . 'MusicianController');
+ Route::resource('project',  $api_namespace . 'ProjectController');
