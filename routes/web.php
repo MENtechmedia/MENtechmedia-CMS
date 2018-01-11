@@ -62,3 +62,4 @@ Route::get('password/reset/{token}', $auth_namespace . 'ResetPasswordController@
 Route::post('password/reset', $auth_namespace . 'ResetPasswordController@reset');
 
 Route::get('home', $cms_namespace . 'HomeController@index');
+
