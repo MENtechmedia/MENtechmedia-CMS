@@ -3,10 +3,21 @@
  	<div class='row'>
 
  		<div class='col-lg-6 xs-space-outside-down-sm' id='doneren'>
-
- 			<h2 class='text-color-light space-inside-down-sm'>Donaties</h2>
-
- 			<p class='text-color-light text-bold'>PRJCT Amsterdam kan uw steun goed gebruiken. Wilt u een donatie doen? Dan kunt u contact opnemen met <span class='text-color-secondary text-bold'>maartenengeltjes@prjct.amsterdam</span> met als onderwerp ‘donatie’. </p>
+			
+			<editable-title id="2">
+				<h2 class='text-color-light space-inside-down-sm'>
+					<editable-text>
+						
+					</editable-text>
+				</h2>
+			</editable-title>
+ 			
+			<editable-section id="2">
+				<p class='text-color-light text-bold'>
+					<editable-text></editable-text>
+				</p>
+			</editable-section>
+ 			
 
  		</div>
 

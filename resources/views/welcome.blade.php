@@ -48,14 +48,14 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <editable-title id="2">
+                        <editable-title id="1">
                             <h1 class="text-color-main text-bold">
                                 <editable-text></editable-text>
                             </h1>
                         </editable-title>
                     </div>
                     <div class="col-lg-8">
-                        <editable-section id="2">
+                        <editable-section id="1">
                             <p class="space-outside-up-md font-md">
                                 <editable-text></editable-text>
                             </p>
@@ -105,6 +105,7 @@
                 </div>
             </div>
 
+            @if($project)
             <div id="projecten" class="container-fluid space-inside-sides-xl xs-space-inside-sides-md space-inside-lg   bg-accent">
                 <div class="row">
                     <div class="col-lg-12 space-inside-down-lg">
@@ -130,7 +131,7 @@
                     </div>
                 </div>
             </div>
-
+            @endif
 
 
             <div class="container-fluid bg-accent space-inside-sides-xl xs-space-inside-sides-md">
@@ -217,8 +218,9 @@
                 @include('partials.top-scroll')
             </div>
         </div>
+        @include('partials.footer')
     </div>
-       @include('partials.footer')
+      
 
         <script type="text/javascript" src="/js/app.js"></script>
         <script>

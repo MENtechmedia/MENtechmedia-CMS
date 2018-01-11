@@ -3,7 +3,7 @@ use Illuminate\Database\Seeder;
 
 use App\Ticket;
 use App\Musician;
-use App\Projec;
+use App\Project;
 
 class RoleTableSeeder extends Seeder
 {
