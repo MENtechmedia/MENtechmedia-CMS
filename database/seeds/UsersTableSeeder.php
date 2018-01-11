@@ -12,7 +12,10 @@ class UsersTableSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
+    {   
+
+        User::truncate();
+        
         $user = new User();
         
         $user->name = "Admin";
@@ -20,5 +23,7 @@ class UsersTableSeeder extends Seeder
         $user->password = bcrypt("password");
 
         $user->save();
+
+        Bouncer::assign('admin')->to(User::find(1));
     }
 }

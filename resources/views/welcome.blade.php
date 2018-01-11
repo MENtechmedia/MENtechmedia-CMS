@@ -108,12 +108,12 @@
             <div id="projecten" class="container-fluid space-inside-sides-xl xs-space-inside-sides-md space-inside-lg   bg-accent">
                 <div class="row">
                     <div class="col-lg-12 space-inside-down-lg">
-                        <h1 class="text-color-main text-light ">Pergolesi’s <span class="text-bold"> Stabat Mater </span></h1>
+                        <h1 class="text-color-main text-light ">{{ $project->title }} <span class="text-bold">  </span></h1>
                         <p class="font-lg space-outside-up-md text-italic"> Projecten </p>
                     </div>
                     <div class="col-lg-8 ">
                         <p class="font-md">
-                            Het eerste project van PRJCT Amsterdam is het Stabat Mater van Pergolesi, één van de beroemdste middeleeuws-Latijnse gedichten over de Moeder Gods in smart om haar zoon, de gekruisigde Christus. Voorafgaand aan het project zal schrijver P.F. Thomése spreken over de dood van zijn dochter. Deze voordracht breekt de muziek van Pergolesi over dezelfde thematiek open en verbindt de wereld van de literatuur aan die van de klassieke muziek.
+                             {!! nl2br(e($project->description)) !!}
                         </p>
                         <a
                             class="

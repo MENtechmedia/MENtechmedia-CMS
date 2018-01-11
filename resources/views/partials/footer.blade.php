@@ -6,7 +6,7 @@
 
  			<h2 class='text-color-light space-inside-down-sm'>Donaties</h2>
 
- 			<p class='text-color-light text-bold'>PRJCT Amsterdam kan uw steun goed gebruiken. Wilt u een donatie doen? Dan kunt u contact opnemen met <span class='text-color-secondary text-bold'>donaties@prjct.amsterdam</span> met als onderwerp ‘donatie’. </p>
+ 			<p class='text-color-light text-bold'>PRJCT Amsterdam kan uw steun goed gebruiken. Wilt u een donatie doen? Dan kunt u contact opnemen met <span class='text-color-secondary text-bold'>maartenengeltjes@prjct.amsterdam</span> met als onderwerp ‘donatie’. </p>
 
  		</div>
 

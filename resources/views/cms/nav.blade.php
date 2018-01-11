@@ -22,27 +22,6 @@
 </div>
 <!-- end of content divider -->
 
-<!-- Load plugin links here -->
-
-<div class="col-lg-12 space-inside-sm">
-
-    <!-- header -->
-    <p class="space-inside-sides-md text-color-main text-semi-bold font-xs space-outside-sm pointer collapseAble" data-toggle="collapse" data-target="#core-plugins">
-        Plugins
-        <i id="core-plugins-caret-right" class="material-icons pointer text-hover-light transition-fast" style="position: relative; top: 9px; left: 20px;">keyboard_arrow_right</i>
-    </p>
-
-    <div id="core-plugins" class="collapse in">
-        <plugin-nav></plugin-nav> 
-    </div>  
-</div>
-
-<!-- content divider -->
-<div style="height: 4px;" class="  col-lg-12 space-inside-xs">
-    <div style="height: 4px;" class="bg-tertiary-darken-xs border-dark border-top"></div>
-</div>
-<!-- end of content divider -->
-
  @foreach($navGroups as $navGroup)
 <div class="col-lg-12 space-inside-sm " >
     <!-- header -->
