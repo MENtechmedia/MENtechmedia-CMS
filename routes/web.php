@@ -20,8 +20,6 @@ Route::get('/', function () {
 });
 
 
-
-
 /**
  * CMS ROUTES
  */
