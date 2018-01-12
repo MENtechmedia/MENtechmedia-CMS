@@ -27,6 +27,7 @@
 
             window.user_id =  <?php echo json_encode($id); ?>   
         </script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body>
           
@@ -168,7 +169,7 @@
 
             <div id="contact" class="container-fluid space-inside-sides-xl space-inside-lg">
                 <div class="row">
-                    <form method='POST' action='/mail'>
+                    <form method='POST' id="captcha" action='/mail'>
                         {{ csrf_field() }}
                         <div class="col-lg-12 space-inside-down-lg">
                             <h1 class="text-color-main text-bold">Contact</h1>
@@ -218,6 +219,9 @@
                             "
                             required> </textarea>
                         </div>
+                        <div class="col-lg-7 clear-floats space-inside-xs">
+                            <div class="g-recaptcha" data-sitekey="6LcpY0AUAAAAAIB6DhpxxIGRzoGlXr-kUTYKMr-c"></div>
+                        </div>
                         <button
                         class="
                         text-color-light
@@ -253,6 +257,16 @@
         </script>
         <script>
           new WOW().init();
+        </script>
+        <script type="text/javascript">
+            $("#captcha").submit(function(event) {
+               var recaptcha = $(".g-recaptcha-response").val();
+               if (recaptcha === "") {
+                  event.preventDefault();
+                  $(".g-recaptcha-response").parent().addClass("bg-danger");
+                  alert("Recaptcha nog niet ingevuld!");
+               }
+            });
         </script>
         
     </body>
