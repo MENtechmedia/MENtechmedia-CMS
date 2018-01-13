@@ -40,6 +40,7 @@ class Ticket extends Model {
                 translation:  'Korte beschrijving van de uitvoering.',
                 validation: new Validator({
                     required: true,
+                    max_string_length: 190,
                 }),
                 walkThrough: this.descriptionWalkThrough(),
             },

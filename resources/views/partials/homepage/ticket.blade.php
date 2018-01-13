@@ -9,6 +9,9 @@
         </div>
         <div class=" space-inside-sides-sm space-inside-sm" style="min-height: 150px; height: 150px;">
             <h4 style="min-height: 40px;" class="">{{ $title }}</h4>
+            <p class="space-inside-up-sm">
+                {{ str_limit($description, 180) }}
+            </p>
         </div>
         <div>
             <a target="_blank" href="{{$websiteAddress}}"

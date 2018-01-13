@@ -10,6 +10,7 @@ class Musician extends Model
 
     protected $appends = [
         'portrait',
+        'original',
     ];
 
     protected $fillable = [

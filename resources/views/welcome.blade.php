@@ -83,6 +83,7 @@
                                 'date' => $ticket->getDate() . " " . getMonthName($ticket->getMonth()) . " " . $ticket->getYear(),
                                 'image' => $ticket->landscape,
                                 'title' => $ticket->title,
+                                'description' => $ticket->description,
                                 'websiteAddress' => "https://" . $ticket->link,
                             ])
                         @empty
@@ -100,6 +101,7 @@
                                             'date' => $ticket->date,
                                             'image' => $ticket->landscape,
                                             'title' => $ticket->title,
+                                            'description' => $ticket->description,
                                             'websiteAddress' => "https://" . $ticket->link,
                                         ])
                                     @empty

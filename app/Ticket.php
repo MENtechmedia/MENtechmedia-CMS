@@ -11,7 +11,8 @@ class Ticket extends Model
 
     protected $appends = [
         'portrait',
-        'landscape'
+        'landscape',
+        'original',
     ];
 
     protected $fillable = [
