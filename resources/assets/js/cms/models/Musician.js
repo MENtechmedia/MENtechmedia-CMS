@@ -35,6 +35,11 @@ class Musician extends Model {
                 walkThrough: this.descriptionWalkThrough(),
             },
 
+            visible: {
+                type: 'boolean',
+                translation: 'Zichtbaar op website?',
+            },
+
             photo: { 
 				type: 'photo', 
 				translation: 'Kies een foto', 

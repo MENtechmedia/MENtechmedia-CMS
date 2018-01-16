@@ -17,5 +17,6 @@ class Musician extends Model
         'name',
         'function',
         'description',
+        'visible',
     ];
 }

@@ -14,7 +14,7 @@ class HomepageController extends Controller
 {
     public function index() {
 
-      $musicians = Musician::all();
+      $musicians = Musician::where('visible', '=', 0)->get();
       $tickets = Ticket::where('date', '>', Carbon::now()->addWeeks(-1))->get();
       $project = Project::latest()->first();
 
