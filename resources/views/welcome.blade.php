@@ -75,7 +75,7 @@
             <div id="buy-tickets" class="container-fluid  space-inside-xl no-overflow">
                 <div class="row all-row-centered">
                     <div class="col-lg-12 col-centered space-outside-down-xl">
-                        <h1 class="text-color-main text-bold text-center ">Tickets bestellen</h1>
+                        <h1 class="text-color-main text-bold text-center ">Tickets</h1>
                     </div>
                     <div class="hidden-xs">
                         @forelse($tickets as $ticket)
@@ -137,7 +137,7 @@
                                 space-inside-sm
                                 shadow-xs
                             "
-                        href="#buy-tickets"> Bestel uw tickets hier </a>
+                        href="#buy-tickets"> Order tickets here </a>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@
                 <div style="height: 1px;" class="divider bg-main bg-main-lighten-lg"></div>
                 <div class="row text-center">
                     <div class="col-lg-12 space-outside-xl">
-                        <h1 class="text-color-main ">Solisten <span class="text-light">&</span> muzikaal leiders</h1>
+                        <h1 class="text-color-main ">Soloists <span class="text-light">&</span> musical leaders</h1>
                     </div>
                     @forelse($musicians as $musician)
                     <div class="col-lg-4 text-center space-outside-xl">
@@ -177,7 +177,7 @@
                             <h1 class="text-color-main text-bold">Contact</h1>
                         </div>
                         <div class="col-lg-4 clear-floats space-inside-xs">
-                            <p class="space-inside-sm text-bold">Naam</p>
+                            <p class="space-inside-sm text-bold">Name</p>
                             <input type="text" name="name"
                             class="
                                 border border-accent border-curved
@@ -187,7 +187,7 @@
                             " required>
                         </div>
                         <div class="col-lg-4 clear-floats space-inside-xs">
-                            <p class="space-inside-sm text-bold">Emailadres</p>
+                            <p class="space-inside-sm text-bold">Email</p>
                             <input type="email" name="email"
                             class="
                                 border border-accent border-curved
@@ -197,7 +197,7 @@
                             " required>
                         </div>
                         <div class="col-lg-4 clear-floats space-inside-xs">
-                            <p class="space-inside-sm text-bold">Telefoonnummer</p>
+                            <p class="space-inside-sm text-bold">Phone number</p>
                             <input type="text" name="phone_number"
                             class="
                                 border border-accent border-curved
@@ -209,7 +209,7 @@
                             required>
                         </div>
                         <div class="col-lg-7 clear-floats space-inside-xs">
-                            <p class="space-inside-sm text-bold">Uw bericht</p>
+                            <p class="space-inside-sm text-bold">Message</p>
                             <textarea style="resize: none; min-height: 200px;" type="text" name="message"
                             class="
                                 border border-accent border-curved
@@ -233,7 +233,7 @@
                         space-inside-xs space-inside-sides-sm space-outside-up-xs space-outside-left-sm
                         block
                         transition-normal
-                        ">Versturen</button>
+                        ">Send</button>
 
                     </form>
                 </div>
