@@ -70,7 +70,9 @@
         @yield('content')
 
     </div>
-    <script type="text/javascript" src="/js/app.js"></script>
+    <!-- Script for polyfilling Promises on IE9 and 10 -->
+    <script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script>
+    <script type="text/javascript" src="/js/app.js<?php echo microtime(); ?>"></script>
         
     
 </body>
