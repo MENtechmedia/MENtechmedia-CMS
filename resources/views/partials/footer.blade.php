@@ -33,7 +33,11 @@
 	 			'>
 		 			<i class='icon ion-social-facebook text-color-light' style='font-size: 30px;'></i>
 		 		</div>
-	 		</a>
+			 </a>
+			 
+			 <div class="space-inside-md">
+				<p class="text-color-light">Gerealiseerd door <a class="text-color-light text-bold" href="https://mentechmedia.nl" target="_blank">MEN Technology & Media</a></p>
+			</div>
 
  			<p class='text-color-light text-bold'> &copy; Maarten Engeltjes <?php echo date("Y") ?></p>
 
