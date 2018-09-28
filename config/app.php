@@ -170,6 +170,7 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         Snowfire\Beautymail\BeautymailServiceProvider::class,
         Silber\Bouncer\BouncerServiceProvider::class,
+        DevArjhay\Honeypot\Providers\HoneypotServiceProvider::class,
         
         /*
          * Application Service Providers...

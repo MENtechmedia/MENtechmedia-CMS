@@ -173,6 +173,7 @@
                 <div class="row">
                     <form method='POST' id="captcha" action='/mail'>
                         {{ csrf_field() }}
+                        {!! honeypot('honeypot_name', 'honeypot_time') !!}
                         <div class="col-lg-12 space-inside-down-lg">
                             <h1 class="text-color-main text-bold">Contact</h1>
                         </div>
